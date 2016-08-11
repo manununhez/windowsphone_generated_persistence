@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShoppingCartApp.Views;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -44,5 +45,31 @@ namespace ShoppingCartApp
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
+
+        private void btnShoppingCart_click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ShoppingCartView));
+        }
+
+        private void btnUser_click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(UserView));
+        }
+
+        private void btnProduct_click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ProductView));
+        }
+
+        private void btnProvider_click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ProviderView));
+        }
+
+        private void btnImageProduct_click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ProductImageView));
+        }
+
     }
 }

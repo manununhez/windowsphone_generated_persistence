@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="ShoppingCartApp.Views.ProductView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShoppingCartApp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="Persistence App" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="Product" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <TextBlock  x:Name="txbQuantity" TextWrapping="Wrap"  Text="0" Margin="0,10,330,455" FontSize="16" Loaded="element_count_loaded" HorizontalAlignment="Right" Width="16"/>
+            <TextBlock Text="elementos" TextWrapping="Wrap" Margin="31,9,251,453" FontSize="16" />
+            <Button x:Name="btnAddProduct" Content="Add Product" HorizontalAlignment="Left" Margin="115,-9,0,0" VerticalAlignment="Top" Click="btnAddProduct_click"/>
+            <Button x:Name="btnDeleteAllProduct" Content="Delete all" HorizontalAlignment="Left" Margin="252,-9,0,0" VerticalAlignment="Top" Click="btnDeleteAll_click"/>
+
+            <!--TODO: Content should be placed within the following grid-->
+            <Grid Margin="-2,1,12,-3">
+                <ListBox BorderBrush="#FF141EE4" Height="auto" BorderThickness="2" MaxHeight="580" x:Name="listBoxobj" SelectionChanged="listBoxobj_SelectionChanged" Margin="10,51,-10,35" Loaded="ReadAllProducts_Loaded">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Background="Gray" Width="480">
+                                <Border BorderBrush="White" BorderThickness="1">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" Text="IdProducto:" FontSize="17"/>
+                                        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="IdProductoTxt" TextWrapping="Wrap" Text="{Binding IdProducto}" FontSize="17" Foreground="White"/>
+
+                                        <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Nombre:" FontSize="17"/>
+                                        <TextBlock Grid.Row="1" Grid.Column="1" x:Name="NombreTxt"  TextWrapping="Wrap" Text="{Binding Nombre}" FontSize="17" Foreground="White"/>
+
+                                        <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Precio:" FontSize="17"/>
+                                        <TextBlock Grid.Row="2" Grid.Column="1" x:Name="PrecioTxt"  TextWrapping="Wrap" Text="{Binding Precio}" FontSize="17" Foreground="White"/>
+
+                                        <TextBlock Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Codigo:" FontSize="17"/>
+                                        <TextBlock Grid.Row="3" Grid.Column="1" x:Name="CodigoTxt"  TextWrapping="Wrap" Text="{Binding Codigo}" FontSize="17" Foreground="White"/>
+
+                                        <TextBlock Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="IdProveedor:" FontSize="17"/>
+                                        <TextBlock Grid.Row="4" Grid.Column="1" x:Name="IdProveedorTxt"  TextWrapping="Wrap" Text="{Binding IdProveedor}" FontSize="17" Foreground="White"/>
+
+                                    </Grid>
+                                </Border>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

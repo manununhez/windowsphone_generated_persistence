@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="ShoppingCartApp.Views.ProductFormDeleteUpdate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShoppingCartApp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <ScrollViewer>
+        <Grid x:Name="LayoutRoot">
+
+            <Grid.ChildrenTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition/>
+                </TransitionCollection>
+            </Grid.ChildrenTransitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Title Panel -->
+            <StackPanel Grid.Row="0" Margin="19,0,0,0">
+                <TextBlock Text="Persistence App" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+                <TextBlock Text="Delete/Update" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+            </StackPanel>
+
+            <!--TODO: Content should be placed within the following grid-->
+            <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="27,0,0,0" TextWrapping="Wrap" Text="IdProducto" VerticalAlignment="Top" FontSize="14"/>
+                <TextBox x:Name="IdProductoTbx" HorizontalAlignment="Left" Margin="27,20,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
+                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="27,80,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top" FontSize="14" />
+                <TextBox x:Name="NameTbx" HorizontalAlignment="Left" Margin="27,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
+                <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="27,160,0,0" TextWrapping="Wrap" Text="Precio" VerticalAlignment="Top" FontSize="14"/>
+                <TextBox x:Name="PrecioTbx" HorizontalAlignment="Left" Margin="27,180,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
+                <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="27,240,0,0" TextWrapping="Wrap" Text="Codigo" VerticalAlignment="Top" FontSize="14"/>
+                <TextBox x:Name="CodigoTbx" HorizontalAlignment="Left" Margin="27,260,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
+                <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="27,320,0,0" TextWrapping="Wrap" Text="IdProveedor" VerticalAlignment="Top" FontSize="14"/>
+                <TextBox x:Name="IdProveedorTbx" HorizontalAlignment="Left" Margin="27,340,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
+
+                <Button x:ConnectionId='1' x:Name="btnDeleteProduct" Content="Delete Product" HorizontalAlignment="Left" Margin="27,400,0,0" VerticalAlignment="Top" Height="71" Width="304"                         />
+                <Button x:ConnectionId='2' x:Name="btnUpdateProduct" Content="Update Product" HorizontalAlignment="Left" Margin="27,460,0,0" VerticalAlignment="Top" Height="71" Width="304"                        />
+
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>
+

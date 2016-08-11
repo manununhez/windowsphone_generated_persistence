@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ShoppingCartApp.Common;
+using SQLite;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,6 +9,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,7 +29,8 @@ namespace ShoppingCartApp
     public sealed partial class App : Application
     {
         private TransitionCollection transitions;
-
+        public static string DB_NAME = "emarket.sqlite";
+        public static string DB_PATH = Path.Combine(Path.Combine(ApplicationData.Current.LocalFolder.Path, DB_NAME));//DataBase Name 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -35,6 +39,8 @@ namespace ShoppingCartApp
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+
+            MySQLiteHelper.Createdatabase();
         }
 
         /// <summary>
