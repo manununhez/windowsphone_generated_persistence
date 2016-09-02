@@ -1,6 +1,8 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\manuelitox\documents\windowspersistence\shoppingcartapp\shoppingcartapp\obj\x86\debug\intermediatexaml\shoppingcartapp.exe" HashGuid="c9c203c9-99ed-c54e-4e85-cfd167650f4f" />
+    <LocalAssembly PathName="c:\users\manuelitox\documents\windowspersistence\shoppingcartapp\shoppingcartapp\obj\x86\debug\intermediatexaml\shoppingcartapp.exe" HashGuid="a4d3105b-4d16-7ed3-3313-a9591ed64692" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="c:\users\manuelitox\documents\windowspersistence\shoppingcartapp\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.extensions.dll" HashGuid="794366f8-cc6d-f0fa-3d07-33b45136e193" />
+    <ReferenceAssembly PathName="c:\users\manuelitox\documents\windowspersistence\shoppingcartapp\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

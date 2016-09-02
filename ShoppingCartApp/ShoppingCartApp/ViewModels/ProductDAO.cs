@@ -53,11 +53,11 @@ namespace ShoppingCartApp.ViewModels
                 var existingproduct = dbConn.Query<Product>("select * from Product where Id =" + product.Id).FirstOrDefault();
                 if (existingproduct != null)
                 {
-                    existingproduct.IdProducto = product.IdProducto;
-                    existingproduct.Nombre = product.Nombre;
-                    existingproduct.Precio = product.Precio;
-                    existingproduct.Codigo = product.Codigo;
-                    existingproduct.IdProveedor = product.IdProveedor;
+                    existingproduct.idProduct = product.idProduct;
+                    existingproduct.name = product.name;
+                    existingproduct.price = product.price;
+                    existingproduct.code = product.code;
+                    existingproduct.idProvider = product.idProvider;
                     
 
                     dbConn.RunInTransaction(() =>

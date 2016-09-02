@@ -21,6 +21,12 @@
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\ShoppingCartApp.exe">
       <PackagePath>ShoppingCartApp.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.13.0\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
@@ -56,6 +62,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Acelerometer\acclerometer.xbf">
+      <PackagePath>Views\Acelerometer\acclerometer.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\HttpClient\BlankPage.xbf">
+      <PackagePath>Views\HttpClient\BlankPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Camera\CameraPhoto.xbf">
+      <PackagePath>Views\Camera\CameraPhoto.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Product\ProductFormDeleteUpdate.xbf">
       <PackagePath>Views\Product\ProductFormDeleteUpdate.xbf</PackagePath>

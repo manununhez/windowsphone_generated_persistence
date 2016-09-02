@@ -60,11 +60,12 @@ namespace ShoppingCartApp.Views
             {
                  selectedProduct = e.Parameter as Product;
                 //currentcontact = productDAO.ReadContact(Selected_ContactId.Id);//Read selected DB contact 
-                IdProductoTbx.Text = Convert.ToString(selectedProduct.IdProducto);//get contact Name 
-                IdProveedorTbx.Text = Convert.ToString(selectedProduct.IdProveedor);//get contact PhoneNumber
-                NameTbx.Text = selectedProduct.Nombre;
-                PrecioTbx.Text = selectedProduct.Precio;
-                CodigoTbx.Text = selectedProduct.Codigo; 
+                IdProductoTbx.Text = Convert.ToString(selectedProduct.idProduct);//get contact Name 
+                IdProveedorTbx.Text = Convert.ToString(selectedProduct.idProvider);//get contact PhoneNumber
+                NameTbx.Text = selectedProduct.name;
+                PrecioTbx.Text = selectedProduct.price;
+                CodigoTbx.Text = selectedProduct.code;
+                DescriptionTbx.Text = selectedProduct.description; 
             }
         }
 
@@ -83,11 +84,12 @@ namespace ShoppingCartApp.Views
         {
             Product currentProduct = new Product();
             currentProduct.Id = selectedProduct.Id;
-            currentProduct.Nombre = NameTbx.Text;
-            currentProduct.Precio = PrecioTbx.Text;
-            currentProduct.Codigo = CodigoTbx.Text;
-            currentProduct.IdProducto = Convert.ToInt32(IdProductoTbx.Text);
-            currentProduct.IdProveedor = Convert.ToInt32(IdProveedorTbx.Text);
+            currentProduct.name = NameTbx.Text;
+            currentProduct.price = PrecioTbx.Text;
+            currentProduct.code = CodigoTbx.Text;
+            currentProduct.description = DescriptionTbx.Text;
+            currentProduct.idProduct = Convert.ToInt32(IdProductoTbx.Text);
+            currentProduct.idProvider = Convert.ToInt32(IdProveedorTbx.Text);
             productDAO.UpdateProduct(currentProduct);//Update selected DB contact Id 
             Frame.Navigate(typeof(ProductView));
         }

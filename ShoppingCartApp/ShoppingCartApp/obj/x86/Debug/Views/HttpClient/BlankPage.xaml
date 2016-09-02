@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="ShoppingCartApp.Views.BlankPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShoppingCartApp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="URI Address:" FontSize="16" Height="20"  Margin="15,0,0,0" />
+                <TextBox x:Name="InputAddress" Text="https://api.myjson.com/bins" FontSize="16" Height="20" Margin="15,0,0,0" />
+                <Button x:ConnectionId='1' Content="Start"                     Margin="280,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Status:" FontSize="16" Height="20" Margin="15,0,0,0" />
+                <TextBox x:Name="StatusText" Text="Idle" FontSize="16" Height="Auto" TextWrapping="Wrap" Margin="15,0,0,0" />
+            </StackPanel>
+            <Grid 
+                Grid.Column="1" Margin="15,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="OutputView" FontSize="16" Height="Auto" Margin="15,0,0,0" TextWrapping="Wrap" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>
+

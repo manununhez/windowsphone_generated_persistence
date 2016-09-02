@@ -66,7 +66,7 @@ namespace ShoppingCartApp.Views
             ProductDAO productDAO = new ProductDAO();
             if (IdProductoTbx.Text != "" & NameTbx.Text != "" & PrecioTbx.Text != "" & CodigoTbx.Text != "" & IdProveedorTbx.Text != "")
             {
-                productDAO.Insert(new Product(Int32.Parse(IdProductoTbx.Text), NameTbx.Text, PrecioTbx.Text, CodigoTbx.Text, Int32.Parse(IdProveedorTbx.Text))); 
+                productDAO.Insert(new Product(Int32.Parse(IdProductoTbx.Text), NameTbx.Text, PrecioTbx.Text, CodigoTbx.Text, Int32.Parse(IdProveedorTbx.Text), DescriptionTbx.Text)); 
                 Frame.Navigate(typeof(ProductView));//after add contact redirect to product listbox page
             }
             else

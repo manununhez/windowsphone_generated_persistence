@@ -40,8 +40,11 @@
                 <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="27,320,0,0" TextWrapping="Wrap" Text="IdProveedor" VerticalAlignment="Top" FontSize="14"/>
                 <TextBox x:Name="IdProveedorTbx" HorizontalAlignment="Left" Margin="27,340,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
 
-                <Button x:ConnectionId='1' x:Name="btnDeleteProduct" Content="Delete Product" HorizontalAlignment="Left" Margin="27,400,0,0" VerticalAlignment="Top" Height="71" Width="304"                         />
-                <Button x:ConnectionId='2' x:Name="btnUpdateProduct" Content="Update Product" HorizontalAlignment="Left" Margin="27,460,0,0" VerticalAlignment="Top" Height="71" Width="304"                        />
+                <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="27,400,0,0" TextWrapping="Wrap" Text="Descripcion" VerticalAlignment="Top" FontSize="14"/>
+                <TextBox x:Name="DescriptionTbx" HorizontalAlignment="Left" Margin="27,420,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
+
+                <Button x:ConnectionId='1' x:Name="btnDeleteProduct" Content="Delete Product" HorizontalAlignment="Left" Margin="27,480,0,0" VerticalAlignment="Top" Height="71" Width="304"                         />
+                <Button x:ConnectionId='2' x:Name="btnUpdateProduct" Content="Update Product" HorizontalAlignment="Left" Margin="27,500,0,0" VerticalAlignment="Top" Height="71" Width="304"                        />
 
             </Grid>
         </Grid>

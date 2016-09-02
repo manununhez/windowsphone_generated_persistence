@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="IdProveedor" />
-    <RootPropertyPathName Name="Codigo" />
-    <RootPropertyPathName Name="Precio" />
-    <RootPropertyPathName Name="Nombre" />
-    <RootPropertyPathName Name="IdProducto" />
+    <RootPropertyPathName Name="description" />
+    <RootPropertyPathName Name="idProvider" />
+    <RootPropertyPathName Name="code" />
+    <RootPropertyPathName Name="price" />
+    <RootPropertyPathName Name="name" />
+    <RootPropertyPathName Name="idProduct" />
     <RootPropertyPathName Name="Password" />
+    <RootPropertyPathName Name="Nombre" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
@@ -22,8 +24,8 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
       <RootProperty Name="ColumnDefinitions" />
-      <RootProperty Name="ChildrenTransitions" />
       <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ChildrenTransitions" />
       <RootProperty Name="Background" />
       <RootProperty Name="Width" />
       <RootMethod Name="GetRow" />
@@ -36,6 +38,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
@@ -57,26 +60,38 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Height" />
       <RootProperty Name="CharacterSpacing" />
       <RootProperty Name="Width" />
       <RootProperty Name="Foreground" />
       <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="ShoppingCartApp.MainPage" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="ShoppingCartApp.Views.Acelerometer.acclerometer" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="HorizontalAlignment" />
+    <RootType FullName="ShoppingCartApp.Views.BlankPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CaptureElement">
       <RootProperty Name="Margin" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Background" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="ShoppingCartApp.Views.CameraPhoto" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
     <RootType FullName="ShoppingCartApp.Views.ProductFormDeleteUpdate" />
     <RootType FullName="ShoppingCartApp.Views.ProductFormNew" />
     <RootType FullName="ShoppingCartApp.Views.ProductImageView" />

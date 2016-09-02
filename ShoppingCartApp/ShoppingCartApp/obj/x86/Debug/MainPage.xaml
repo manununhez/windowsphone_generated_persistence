@@ -25,6 +25,9 @@
                 <Button x:ConnectionId='3' x:Name="btnProduct" Content="Product" HorizontalAlignment="Left" Margin="36,193,0,0" VerticalAlignment="Top"                         />
                 <Button x:ConnectionId='4' x:Name="btnProvider" Content="Provider" HorizontalAlignment="Left" Margin="36,264,0,0" VerticalAlignment="Top"                          />
                 <Button x:ConnectionId='5' x:Name="btnImageProduct" Content="ImageProduct" HorizontalAlignment="Left" Margin="36,334,0,0" VerticalAlignment="Top"                              />
+                <Button x:ConnectionId='6' x:Name="btnHttpClient" Content="Rest" HorizontalAlignment="Left" Margin="36,404,0,0" VerticalAlignment="Top"                             />
+                <Button x:ConnectionId='7' x:Name="btnAccelerometer" Content="Accelerometer" HorizontalAlignment="Left" Margin="36,464,0,0" VerticalAlignment="Top"                                />
+
             </Grid>
         </Grid>
     </ScrollViewer>

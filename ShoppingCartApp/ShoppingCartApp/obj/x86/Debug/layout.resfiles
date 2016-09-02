@@ -7,6 +7,9 @@ Assets\WideLogo.scale-240.png
 App.xbf
 MainPage.xbf
 ShoppingCartApp.xr.xml
+Views\Acelerometer\acclerometer.xbf
+Views\Camera\CameraPhoto.xbf
+Views\HttpClient\BlankPage.xbf
 Views\Product\ProductFormDeleteUpdate.xbf
 Views\Product\ProductFormNew.xbf
 Views\Product\ProductView.xbf

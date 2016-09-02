@@ -1,33 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ShoppingCartApp.Model
 {
-    class Product
+    [DataContract]
+    class Product 
     {
         //The Id property is marked as the Primary Key
         [SQLite.PrimaryKey, SQLite.AutoIncrement]
+        [DataMember]
         public int Id { get; set; }
-        public int IdProducto { get; set; }
-        public string Nombre { get; set; }
-        public string Precio { get; set; }
-        public string Codigo { get; set; }
-        public int IdProveedor { get; set; }
+
+        [DataMember]
+        public int idProduct { get; set; }
+
+        [DataMember]
+        public string name { get; set; }
+
+        [DataMember]
+        public string price { get; set; }
+
+        [DataMember]
+        public string code { get; set; }
+
+        [DataMember]
+        public int idProvider { get; set; }
+
+        [DataMember]
+        public string description { get; set; }
+
         public Product()
         {
         }
 
-        public Product(int IdProducto, string Nombre,
-                       string Precio, string Codigo, int IdProveedor)
+        public Product(int idProduct, string name,
+                       string price, string code, int idProvider, string description)
         {
-            this.IdProducto = IdProducto;
-            this.Nombre = Nombre;
-            this.Precio = Precio;
-            this.Codigo = Codigo;
-            this.IdProveedor = IdProveedor;
+            this.idProduct = idProduct;
+            this.name = name;
+            this.price = price;
+            this.code = code;
+            this.idProvider = idProvider;
+            this.description = description;
         }
     }
 }

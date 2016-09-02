@@ -1,4 +1,5 @@
 ﻿using ShoppingCartApp.Views;
+using ShoppingCartApp.Views.Acelerometer;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -71,5 +72,14 @@ namespace ShoppingCartApp
             Frame.Navigate(typeof(ProductImageView));
         }
 
+        private void btnHttpClient_click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(BlankPage));
+        }
+
+        private void btnAccelerometer_click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(acclerometer));
+        }
     }
 }

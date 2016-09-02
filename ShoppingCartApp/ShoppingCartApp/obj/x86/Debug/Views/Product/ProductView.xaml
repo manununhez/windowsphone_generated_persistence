@@ -46,21 +46,25 @@
                                             <RowDefinition Height="Auto"/>
                                             <RowDefinition Height="Auto"/>
                                             <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
                                         </Grid.RowDefinitions>
                                         <TextBlock Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" Text="IdProducto:" FontSize="17"/>
-                                        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="IdProductoTxt" TextWrapping="Wrap" Text="{Binding IdProducto}" FontSize="17" Foreground="White"/>
+                                        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="IdProductoTxt" TextWrapping="Wrap" Text="{Binding idProduct}" FontSize="17" Foreground="White"/>
 
                                         <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Nombre:" FontSize="17"/>
-                                        <TextBlock Grid.Row="1" Grid.Column="1" x:Name="NombreTxt"  TextWrapping="Wrap" Text="{Binding Nombre}" FontSize="17" Foreground="White"/>
+                                        <TextBlock Grid.Row="1" Grid.Column="1" x:Name="NombreTxt"  TextWrapping="Wrap" Text="{Binding name}" FontSize="17" Foreground="White"/>
 
                                         <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Precio:" FontSize="17"/>
-                                        <TextBlock Grid.Row="2" Grid.Column="1" x:Name="PrecioTxt"  TextWrapping="Wrap" Text="{Binding Precio}" FontSize="17" Foreground="White"/>
+                                        <TextBlock Grid.Row="2" Grid.Column="1" x:Name="PrecioTxt"  TextWrapping="Wrap" Text="{Binding price}" FontSize="17" Foreground="White"/>
 
                                         <TextBlock Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Codigo:" FontSize="17"/>
-                                        <TextBlock Grid.Row="3" Grid.Column="1" x:Name="CodigoTxt"  TextWrapping="Wrap" Text="{Binding Codigo}" FontSize="17" Foreground="White"/>
+                                        <TextBlock Grid.Row="3" Grid.Column="1" x:Name="CodigoTxt"  TextWrapping="Wrap" Text="{Binding code}" FontSize="17" Foreground="White"/>
 
                                         <TextBlock Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="IdProveedor:" FontSize="17"/>
-                                        <TextBlock Grid.Row="4" Grid.Column="1" x:Name="IdProveedorTxt"  TextWrapping="Wrap" Text="{Binding IdProveedor}" FontSize="17" Foreground="White"/>
+                                        <TextBlock Grid.Row="4" Grid.Column="1" x:Name="IdProveedorTxt"  TextWrapping="Wrap" Text="{Binding idProvider}" FontSize="17" Foreground="White"/>
+
+                                        <TextBlock Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Descripcion:" FontSize="17"/>
+                                        <TextBlock Grid.Row="5" Grid.Column="1" x:Name="DescriptionTxt"  TextWrapping="Wrap" Text="{Binding description}" FontSize="17" Foreground="White"/>
 
                                     </Grid>
                                 </Border>
