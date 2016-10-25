@@ -1,17 +1,15 @@
-﻿using ShoppingCartApp.Model;
+﻿using ShoppingCartApp.Common;
+using ShoppingCartApp.Model;
 using SQLite;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShoppingCartApp.ViewModels
 {
     class ProductDAO
     {
-        private SQLiteConnection dbConn = new SQLiteConnection(App.DB_PATH);
+        private SQLiteConnection dbConn = new SQLiteConnection(MySQLiteHelper.DbPath);
 
         // Retrieve the specific shoppingcart from the database. 
         public Product ReadProduct(int productid)
@@ -71,7 +69,7 @@ namespace ShoppingCartApp.ViewModels
         // Insert the new product in the Products table. 
         public void Insert(Product product)
         {
-            using (var dbConn = new SQLiteConnection(App.DB_PATH))
+            using (var dbConn = new SQLiteConnection(MySQLiteHelper.DbPath))
             {
                 dbConn.RunInTransaction(() =>
                 {
@@ -83,7 +81,7 @@ namespace ShoppingCartApp.ViewModels
         //Delete specific product 
         public void DeleteProduct(int Id)
         {
-            using (var dbConn = new SQLiteConnection(App.DB_PATH))
+            using (var dbConn = new SQLiteConnection(MySQLiteHelper.DbPath))
             {
                 var existingproduct = dbConn.Query<Product>("select * from Product where Id =" + Id).FirstOrDefault();
                 if (existingproduct != null)
@@ -98,7 +96,7 @@ namespace ShoppingCartApp.ViewModels
         //Delete all productList or delete Products table 
         public void DeleteAllProduct()
         {
-            using (var dbConn = new SQLiteConnection(App.DB_PATH))
+            using (var dbConn = new SQLiteConnection(MySQLiteHelper.DbPath))
             {
                 //dbConn.RunInTransaction(() => 
                 //   { 

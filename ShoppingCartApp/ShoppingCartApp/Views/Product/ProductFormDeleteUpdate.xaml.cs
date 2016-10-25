@@ -2,29 +2,14 @@
 using ShoppingCartApp.Model;
 using ShoppingCartApp.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace ShoppingCartApp.Views
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class ProductFormDeleteUpdate : Page
     {
         private NavigationHelper navigationHelper;
@@ -59,9 +44,8 @@ namespace ShoppingCartApp.Views
             if (e != null)
             {
                  selectedProduct = e.Parameter as Product;
-                //currentcontact = productDAO.ReadContact(Selected_ContactId.Id);//Read selected DB contact 
-                IdProductoTbx.Text = Convert.ToString(selectedProduct.idProduct);//get contact Name 
-                IdProveedorTbx.Text = Convert.ToString(selectedProduct.idProvider);//get contact PhoneNumber
+                IdProductoTbx.Text = Convert.ToString(selectedProduct.idProduct);
+                IdProveedorTbx.Text = Convert.ToString(selectedProduct.idProvider);
                 NameTbx.Text = selectedProduct.name;
                 PrecioTbx.Text = selectedProduct.price;
                 CodigoTbx.Text = selectedProduct.code;

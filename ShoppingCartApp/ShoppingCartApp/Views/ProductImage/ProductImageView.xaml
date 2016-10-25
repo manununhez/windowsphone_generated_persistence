@@ -2,53 +2,30 @@
     x:Class="ShoppingCartApp.Views.ProductImageView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:ShoppingCartApp.Views"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:local="using:ShoppingCartApp.Views">
 
     <ScrollViewer>
-
         <Grid x:Name="LayoutRoot">
-
-            <Grid.ChildrenTransitions>
-                <TransitionCollection>
-                    <EntranceThemeTransition/>
-                </TransitionCollection>
-            </Grid.ChildrenTransitions>
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-
             <!-- Title Panel -->
             <StackPanel Grid.Row="0" Margin="19,0,0,0">
                 <TextBlock Text="Persistence App" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
                 <TextBlock Text="Product Image" Margin="0,-6.5,0,5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
             </StackPanel>
 
-            <Grid Grid.Row="1">
-                <TextBox x:FieldModifier="public" HorizontalAlignment="Center" x:Name="ResultTbx"  Margin="48,10,51,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="91" Width="301" Background="Azure"/>
+            <StackPanel Grid.Row="0" Margin="19,100,0,0">
+                <TextBox x:Name="ResultTbx" HorizontalAlignment="Center" Margin="10,10,10,0" TextWrapping="Wrap" Height="100" Width="340" Background="Azure"/>
+                <TextBlock Text="IdProductoImagen" FontSize="14"/>
+                <TextBox x:Name="IdProductoImagenTbx" TextWrapping="Wrap" Width="340"/>
+                <TextBlock Text="Imagen" FontSize="14"/>
+                <TextBox x:Name="ImagenTbx" TextWrapping="Wrap" Width="340"/>
+                <TextBlock Text="IdProducto" FontSize="14"/>
+                <TextBox x:Name="IdProductoTbx" TextWrapping="Wrap" Width="340"/>
+                <TextBlock Text="Img_src" FontSize="14"/>
+                <TextBox x:Name="Img_srcTbx" TextWrapping="Wrap" Width="340"/>
 
-            </Grid>
-            <!--TODO: Content should be placed within the following grid-->
-            <Grid Grid.Row="2" x:Name="ContentRoot" Margin="19,9.5,19,0">
-                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="27,0,0,0" TextWrapping="Wrap" Text="IdProductoImagen" VerticalAlignment="Top" FontSize="14"/>
-                <TextBox x:Name="IdProductoImagenTbx" HorizontalAlignment="Left" Margin="27,20,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
-                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="27,80,0,0" TextWrapping="Wrap" Text="Imagen" VerticalAlignment="Top" FontSize="14"/>
-                <TextBox x:Name="ImagenTbx" HorizontalAlignment="Left" Margin="27,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
-                <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="27,160,0,0" TextWrapping="Wrap" Text="IdProducto" VerticalAlignment="Top" FontSize="14"/>
-                <TextBox x:Name="IdProductoTbx" HorizontalAlignment="Left" Margin="27,180,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
-                <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="27,240,0,0" TextWrapping="Wrap" Text="Img_src" VerticalAlignment="Top" FontSize="14"/>
-                <TextBox x:Name="Img_srcTbx" HorizontalAlignment="Left" Margin="27,260,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
-
-                <Button x:Name="btnWriteToFile" Content="Write to file" HorizontalAlignment="Left" Margin="27,320,0,0" VerticalAlignment="Top" Height="71" Width="304" Click="btnWriteFile_Click"/>
-                <Button x:Name="btnReadFromFile" Content="Read from file" HorizontalAlignment="Left" Margin="27,380,0,0" VerticalAlignment="Top" Height="71" Width="304" Click="btnReadFile_Click"/>
-
-            </Grid>
+                <Button x:Name="btnWriteToFile" Content="Write to file" HorizontalAlignment="Center" Height="71" Width="304" Click="btnWriteFile_Click"/>
+                <Button x:Name="btnReadFromFile" Content="Read from file" HorizontalAlignment="Center" Height="71" Width="304" Click="btnReadFile_Click"/>
+            </StackPanel>
         </Grid>
     </ScrollViewer>
 </Page>

@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="ShoppingCartApp.Views.RestView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShoppingCartApp.Views">
+    <ScrollViewer>
+        <StackPanel VerticalAlignment="Top">
+            <StackPanel VerticalAlignment="Top">
+                <Button Grid.Column="0" Content="Start" Click="Start_Click" />
+                <TextBlock Grid.Column="1" x:Name="OutputView" FontSize="16" Height="100" TextWrapping="Wrap" />
+            </StackPanel>
+            <StackPanel VerticalAlignment="Top">
+                <Button Grid.Column="0" Content="Start" Click="Start_Click" />
+                <TextBlock Grid.Column="1" x:Name="OutputView2" FontSize="16" Height="100" TextWrapping="Wrap" />
+            </StackPanel>
+            <StackPanel VerticalAlignment="Top">
+                <Button Grid.Column="0" Content="Start" Click="Start_Click" />
+                <TextBlock Grid.Column="1" x:Name="OutputView3" FontSize="16" Height="100" TextWrapping="Wrap" />
+            </StackPanel>
+            <StackPanel VerticalAlignment="Top">
+                <Button Grid.Column="0" Content="Start" Click="Start_Click" />
+                <TextBlock Grid.Column="1" x:Name="OutputView4" FontSize="16" Height="100" TextWrapping="Wrap" />
+            </StackPanel>
+            <StackPanel VerticalAlignment="Top">
+                <Button Grid.Column="0" Content="Start" Click="Start_Click" />
+                <TextBlock Grid.Column="1" x:Name="OutputView5" FontSize="16" Height="100" TextWrapping="Wrap" />
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

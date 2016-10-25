@@ -1,7 +1,9 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\manuelitox\documents\windowspersistence\shoppingcartapp\shoppingcartapp\obj\x86\debug\intermediatexaml\shoppingcartapp.exe" HashGuid="a4d3105b-4d16-7ed3-3313-a9591ed64692" />
+    <LocalAssembly PathName="c:\users\manuelitox\documents\windowspersistence\shoppingcartapp\shoppingcartapp\obj\x86\debug\intermediatexaml\shoppingcartapp.exe" HashGuid="8d32f4c4-53df-993e-445e-98c4b1f829c5" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="c:\users\manuelitox\documents\windowspersistence\shoppingcartapp\packages\kulman.wpa81.baserestservice.1.4.1\lib\portable46-win81+wp81+wpa81\kulman.wpa81.baserestservice.dll" HashGuid="738eefef-fabc-e3a1-e297-30f1581ab689" />
+    <ReferenceAssembly PathName="c:\users\manuelitox\documents\windowspersistence\shoppingcartapp\packages\newtonsoft.json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\newtonsoft.json.dll" HashGuid="74af0f9d-4f96-68dd-0977-2bb867adf196" />
     <ReferenceAssembly PathName="c:\users\manuelitox\documents\windowspersistence\shoppingcartapp\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.extensions.dll" HashGuid="794366f8-cc6d-f0fa-3d07-33b45136e193" />
     <ReferenceAssembly PathName="c:\users\manuelitox\documents\windowspersistence\shoppingcartapp\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
   </ReferenceAssemblyList>

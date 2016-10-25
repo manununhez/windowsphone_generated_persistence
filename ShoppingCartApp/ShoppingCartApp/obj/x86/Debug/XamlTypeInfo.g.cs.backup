@@ -124,41 +124,51 @@ namespace ShoppingCartApp.ShoppingCartApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[16];
+            _typeNameTable = new string[21];
             _typeNameTable[0] = "ShoppingCartApp.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "ShoppingCartApp.Views.BlankPage";
-            _typeNameTable[4] = "ShoppingCartApp.Views.CameraPhoto";
-            _typeNameTable[5] = "ShoppingCartApp.Views.ProductFormDeleteUpdate";
-            _typeNameTable[6] = "ShoppingCartApp.Common.NavigationHelper";
-            _typeNameTable[7] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[8] = "ShoppingCartApp.Views.ProductFormNew";
-            _typeNameTable[9] = "ShoppingCartApp.Views.ProductImageView";
-            _typeNameTable[10] = "ShoppingCartApp.Views.ProductView";
-            _typeNameTable[11] = "ShoppingCartApp.Views.ProviderView";
-            _typeNameTable[12] = "ShoppingCartApp.Views.ShoppingCartView";
-            _typeNameTable[13] = "ShoppingCartApp.Views.User.UserFormDeleteUpdate";
-            _typeNameTable[14] = "ShoppingCartApp.Views.User.UserFormNew";
-            _typeNameTable[15] = "ShoppingCartApp.Views.UserView";
+            _typeNameTable[3] = "ShoppingCartApp.ShareTargetPage";
+            _typeNameTable[4] = "ShoppingCartApp.Views.AudioRecordView";
+            _typeNameTable[5] = "ShoppingCartApp.Common.NavigationHelper";
+            _typeNameTable[6] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[7] = "ShoppingCartApp.Views.SensorsView";
+            _typeNameTable[8] = "Windows.Devices.Sensors.Accelerometer";
+            _typeNameTable[9] = "Object";
+            _typeNameTable[10] = "Windows.Devices.Sensors.Gyrometer";
+            _typeNameTable[11] = "Windows.Devices.Sensors.Compass";
+            _typeNameTable[12] = "Windows.Devices.Sensors.LightSensor";
+            _typeNameTable[13] = "ShoppingCartApp.Views.RestView";
+            _typeNameTable[14] = "ShoppingCartApp.Views.CameraView";
+            _typeNameTable[15] = "ShoppingCartApp.Views.ProductFormDeleteUpdate";
+            _typeNameTable[16] = "ShoppingCartApp.Views.ProductFormNew";
+            _typeNameTable[17] = "ShoppingCartApp.Views.ProductImageView";
+            _typeNameTable[18] = "ShoppingCartApp.Views.ProductView";
+            _typeNameTable[19] = "ShoppingCartApp.Views.UserFormDeleteUpdate";
+            _typeNameTable[20] = "ShoppingCartApp.Views.UserView";
 
-            _typeTable = new global::System.Type[16];
+            _typeTable = new global::System.Type[21];
             _typeTable[0] = typeof(global::ShoppingCartApp.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::ShoppingCartApp.Views.BlankPage);
-            _typeTable[4] = typeof(global::ShoppingCartApp.Views.CameraPhoto);
-            _typeTable[5] = typeof(global::ShoppingCartApp.Views.ProductFormDeleteUpdate);
-            _typeTable[6] = typeof(global::ShoppingCartApp.Common.NavigationHelper);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[8] = typeof(global::ShoppingCartApp.Views.ProductFormNew);
-            _typeTable[9] = typeof(global::ShoppingCartApp.Views.ProductImageView);
-            _typeTable[10] = typeof(global::ShoppingCartApp.Views.ProductView);
-            _typeTable[11] = typeof(global::ShoppingCartApp.Views.ProviderView);
-            _typeTable[12] = typeof(global::ShoppingCartApp.Views.ShoppingCartView);
-            _typeTable[13] = typeof(global::ShoppingCartApp.Views.User.UserFormDeleteUpdate);
-            _typeTable[14] = typeof(global::ShoppingCartApp.Views.User.UserFormNew);
-            _typeTable[15] = typeof(global::ShoppingCartApp.Views.UserView);
+            _typeTable[3] = typeof(global::ShoppingCartApp.ShareTargetPage);
+            _typeTable[4] = typeof(global::ShoppingCartApp.Views.AudioRecordView);
+            _typeTable[5] = typeof(global::ShoppingCartApp.Common.NavigationHelper);
+            _typeTable[6] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[7] = typeof(global::ShoppingCartApp.Views.SensorsView);
+            _typeTable[8] = typeof(global::Windows.Devices.Sensors.Accelerometer);
+            _typeTable[9] = typeof(global::System.Object);
+            _typeTable[10] = typeof(global::Windows.Devices.Sensors.Gyrometer);
+            _typeTable[11] = typeof(global::Windows.Devices.Sensors.Compass);
+            _typeTable[12] = typeof(global::Windows.Devices.Sensors.LightSensor);
+            _typeTable[13] = typeof(global::ShoppingCartApp.Views.RestView);
+            _typeTable[14] = typeof(global::ShoppingCartApp.Views.CameraView);
+            _typeTable[15] = typeof(global::ShoppingCartApp.Views.ProductFormDeleteUpdate);
+            _typeTable[16] = typeof(global::ShoppingCartApp.Views.ProductFormNew);
+            _typeTable[17] = typeof(global::ShoppingCartApp.Views.ProductImageView);
+            _typeTable[18] = typeof(global::ShoppingCartApp.Views.ProductView);
+            _typeTable[19] = typeof(global::ShoppingCartApp.Views.UserFormDeleteUpdate);
+            _typeTable[20] = typeof(global::ShoppingCartApp.Views.UserView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -194,17 +204,17 @@ namespace ShoppingCartApp.ShoppingCartApp_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::ShoppingCartApp.MainPage(); }
-        private object Activate_3_BlankPage() { return new global::ShoppingCartApp.Views.BlankPage(); }
-        private object Activate_4_CameraPhoto() { return new global::ShoppingCartApp.Views.CameraPhoto(); }
-        private object Activate_5_ProductFormDeleteUpdate() { return new global::ShoppingCartApp.Views.ProductFormDeleteUpdate(); }
-        private object Activate_8_ProductFormNew() { return new global::ShoppingCartApp.Views.ProductFormNew(); }
-        private object Activate_9_ProductImageView() { return new global::ShoppingCartApp.Views.ProductImageView(); }
-        private object Activate_10_ProductView() { return new global::ShoppingCartApp.Views.ProductView(); }
-        private object Activate_11_ProviderView() { return new global::ShoppingCartApp.Views.ProviderView(); }
-        private object Activate_12_ShoppingCartView() { return new global::ShoppingCartApp.Views.ShoppingCartView(); }
-        private object Activate_13_UserFormDeleteUpdate() { return new global::ShoppingCartApp.Views.User.UserFormDeleteUpdate(); }
-        private object Activate_14_UserFormNew() { return new global::ShoppingCartApp.Views.User.UserFormNew(); }
-        private object Activate_15_UserView() { return new global::ShoppingCartApp.Views.UserView(); }
+        private object Activate_3_ShareTargetPage() { return new global::ShoppingCartApp.ShareTargetPage(); }
+        private object Activate_4_AudioRecordView() { return new global::ShoppingCartApp.Views.AudioRecordView(); }
+        private object Activate_7_SensorsView() { return new global::ShoppingCartApp.Views.SensorsView(); }
+        private object Activate_13_RestView() { return new global::ShoppingCartApp.Views.RestView(); }
+        private object Activate_14_CameraView() { return new global::ShoppingCartApp.Views.CameraView(); }
+        private object Activate_15_ProductFormDeleteUpdate() { return new global::ShoppingCartApp.Views.ProductFormDeleteUpdate(); }
+        private object Activate_16_ProductFormNew() { return new global::ShoppingCartApp.Views.ProductFormNew(); }
+        private object Activate_17_ProductImageView() { return new global::ShoppingCartApp.Views.ProductImageView(); }
+        private object Activate_18_ProductView() { return new global::ShoppingCartApp.Views.ProductView(); }
+        private object Activate_19_UserFormDeleteUpdate() { return new global::ShoppingCartApp.Views.UserFormDeleteUpdate(); }
+        private object Activate_20_UserView() { return new global::ShoppingCartApp.Views.UserView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -231,98 +241,131 @@ namespace ShoppingCartApp.ShoppingCartApp_XamlTypeInfo
                 xamlType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  ShoppingCartApp.Views.BlankPage
+            case 3:   //  ShoppingCartApp.ShareTargetPage
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_BlankPage;
+                userType.Activator = Activate_3_ShareTargetPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  ShoppingCartApp.Views.CameraPhoto
+            case 4:   //  ShoppingCartApp.Views.AudioRecordView
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_CameraPhoto;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 5:   //  ShoppingCartApp.Views.ProductFormDeleteUpdate
-                userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_ProductFormDeleteUpdate;
+                userType.Activator = Activate_4_AudioRecordView;
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  ShoppingCartApp.Common.NavigationHelper
+            case 5:   //  ShoppingCartApp.Common.NavigationHelper
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Windows.UI.Xaml.DependencyObject
+            case 6:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  ShoppingCartApp.Views.ProductFormNew
+            case 7:   //  ShoppingCartApp.Views.SensorsView
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_ProductFormNew;
+                userType.Activator = Activate_7_SensorsView;
+                userType.AddMemberName("accelerometer");
+                userType.AddMemberName("gyrometer");
+                userType.AddMemberName("compass");
+                userType.AddMemberName("lightSensor");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  ShoppingCartApp.Views.ProductImageView
+            case 8:   //  Windows.Devices.Sensors.Accelerometer
+                userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 9:   //  Object
+                xamlType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  Windows.Devices.Sensors.Gyrometer
+                userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 11:   //  Windows.Devices.Sensors.Compass
+                userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Windows.Devices.Sensors.LightSensor
+                userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 13:   //  ShoppingCartApp.Views.RestView
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_ProductImageView;
+                userType.Activator = Activate_13_RestView;
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  ShoppingCartApp.Views.ProductView
+            case 14:   //  ShoppingCartApp.Views.CameraView
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_ProductView;
+                userType.Activator = Activate_14_CameraView;
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  ShoppingCartApp.Views.ProviderView
+            case 15:   //  ShoppingCartApp.Views.ProductFormDeleteUpdate
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_ProviderView;
+                userType.Activator = Activate_15_ProductFormDeleteUpdate;
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  ShoppingCartApp.Views.ShoppingCartView
+            case 16:   //  ShoppingCartApp.Views.ProductFormNew
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_ShoppingCartView;
+                userType.Activator = Activate_16_ProductFormNew;
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  ShoppingCartApp.Views.User.UserFormDeleteUpdate
+            case 17:   //  ShoppingCartApp.Views.ProductImageView
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_UserFormDeleteUpdate;
+                userType.Activator = Activate_17_ProductImageView;
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  ShoppingCartApp.Views.User.UserFormNew
+            case 18:   //  ShoppingCartApp.Views.ProductView
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_UserFormNew;
+                userType.Activator = Activate_18_ProductView;
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  ShoppingCartApp.Views.UserView
+            case 19:   //  ShoppingCartApp.Views.UserFormDeleteUpdate
                 userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_UserView;
+                userType.Activator = Activate_19_UserFormDeleteUpdate;
+                userType.AddMemberName("NavigationHelper");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  ShoppingCartApp.Views.UserView
+                userType = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_20_UserView;
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -332,47 +375,92 @@ namespace ShoppingCartApp.ShoppingCartApp_XamlTypeInfo
         }
 
 
-        private object get_0_ProductFormDeleteUpdate_NavigationHelper(object instance)
+        private object get_0_AudioRecordView_NavigationHelper(object instance)
+        {
+            var that = (global::ShoppingCartApp.Views.AudioRecordView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_1_SensorsView_accelerometer(object instance)
+        {
+            var that = (global::ShoppingCartApp.Views.SensorsView)instance;
+            return that.accelerometer;
+        }
+        private void set_1_SensorsView_accelerometer(object instance, object Value)
+        {
+            var that = (global::ShoppingCartApp.Views.SensorsView)instance;
+            that.accelerometer = (global::Windows.Devices.Sensors.Accelerometer)Value;
+        }
+        private object get_2_SensorsView_gyrometer(object instance)
+        {
+            var that = (global::ShoppingCartApp.Views.SensorsView)instance;
+            return that.gyrometer;
+        }
+        private void set_2_SensorsView_gyrometer(object instance, object Value)
+        {
+            var that = (global::ShoppingCartApp.Views.SensorsView)instance;
+            that.gyrometer = (global::Windows.Devices.Sensors.Gyrometer)Value;
+        }
+        private object get_3_SensorsView_compass(object instance)
+        {
+            var that = (global::ShoppingCartApp.Views.SensorsView)instance;
+            return that.compass;
+        }
+        private void set_3_SensorsView_compass(object instance, object Value)
+        {
+            var that = (global::ShoppingCartApp.Views.SensorsView)instance;
+            that.compass = (global::Windows.Devices.Sensors.Compass)Value;
+        }
+        private object get_4_SensorsView_lightSensor(object instance)
+        {
+            var that = (global::ShoppingCartApp.Views.SensorsView)instance;
+            return that.lightSensor;
+        }
+        private void set_4_SensorsView_lightSensor(object instance, object Value)
+        {
+            var that = (global::ShoppingCartApp.Views.SensorsView)instance;
+            that.lightSensor = (global::Windows.Devices.Sensors.LightSensor)Value;
+        }
+        private object get_5_SensorsView_NavigationHelper(object instance)
+        {
+            var that = (global::ShoppingCartApp.Views.SensorsView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_6_RestView_NavigationHelper(object instance)
+        {
+            var that = (global::ShoppingCartApp.Views.RestView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_7_CameraView_NavigationHelper(object instance)
+        {
+            var that = (global::ShoppingCartApp.Views.CameraView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_8_ProductFormDeleteUpdate_NavigationHelper(object instance)
         {
             var that = (global::ShoppingCartApp.Views.ProductFormDeleteUpdate)instance;
             return that.NavigationHelper;
         }
-        private object get_1_ProductFormNew_NavigationHelper(object instance)
+        private object get_9_ProductFormNew_NavigationHelper(object instance)
         {
             var that = (global::ShoppingCartApp.Views.ProductFormNew)instance;
             return that.NavigationHelper;
         }
-        private object get_2_ProductImageView_NavigationHelper(object instance)
+        private object get_10_ProductImageView_NavigationHelper(object instance)
         {
             var that = (global::ShoppingCartApp.Views.ProductImageView)instance;
             return that.NavigationHelper;
         }
-        private object get_3_ProductView_NavigationHelper(object instance)
+        private object get_11_ProductView_NavigationHelper(object instance)
         {
             var that = (global::ShoppingCartApp.Views.ProductView)instance;
             return that.NavigationHelper;
         }
-        private object get_4_ProviderView_NavigationHelper(object instance)
+        private object get_12_UserFormDeleteUpdate_NavigationHelper(object instance)
         {
-            var that = (global::ShoppingCartApp.Views.ProviderView)instance;
+            var that = (global::ShoppingCartApp.Views.UserFormDeleteUpdate)instance;
             return that.NavigationHelper;
         }
-        private object get_5_ShoppingCartView_NavigationHelper(object instance)
-        {
-            var that = (global::ShoppingCartApp.Views.ShoppingCartView)instance;
-            return that.NavigationHelper;
-        }
-        private object get_6_UserFormDeleteUpdate_NavigationHelper(object instance)
-        {
-            var that = (global::ShoppingCartApp.Views.User.UserFormDeleteUpdate)instance;
-            return that.NavigationHelper;
-        }
-        private object get_7_UserFormNew_NavigationHelper(object instance)
-        {
-            var that = (global::ShoppingCartApp.Views.User.UserFormNew)instance;
-            return that.NavigationHelper;
-        }
-        private object get_8_UserView_NavigationHelper(object instance)
+        private object get_13_UserView_NavigationHelper(object instance)
         {
             var that = (global::ShoppingCartApp.Views.UserView)instance;
             return that.NavigationHelper;
@@ -385,58 +473,88 @@ namespace ShoppingCartApp.ShoppingCartApp_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "ShoppingCartApp.Views.AudioRecordView.NavigationHelper":
+                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.AudioRecordView");
+                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
+                xamlMember.Getter = get_0_AudioRecordView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "ShoppingCartApp.Views.SensorsView.accelerometer":
+                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.SensorsView");
+                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "accelerometer", "Windows.Devices.Sensors.Accelerometer");
+                xamlMember.Getter = get_1_SensorsView_accelerometer;
+                xamlMember.Setter = set_1_SensorsView_accelerometer;
+                break;
+            case "ShoppingCartApp.Views.SensorsView.gyrometer":
+                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.SensorsView");
+                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "gyrometer", "Windows.Devices.Sensors.Gyrometer");
+                xamlMember.Getter = get_2_SensorsView_gyrometer;
+                xamlMember.Setter = set_2_SensorsView_gyrometer;
+                break;
+            case "ShoppingCartApp.Views.SensorsView.compass":
+                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.SensorsView");
+                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "compass", "Windows.Devices.Sensors.Compass");
+                xamlMember.Getter = get_3_SensorsView_compass;
+                xamlMember.Setter = set_3_SensorsView_compass;
+                break;
+            case "ShoppingCartApp.Views.SensorsView.lightSensor":
+                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.SensorsView");
+                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "lightSensor", "Windows.Devices.Sensors.LightSensor");
+                xamlMember.Getter = get_4_SensorsView_lightSensor;
+                xamlMember.Setter = set_4_SensorsView_lightSensor;
+                break;
+            case "ShoppingCartApp.Views.SensorsView.NavigationHelper":
+                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.SensorsView");
+                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
+                xamlMember.Getter = get_5_SensorsView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "ShoppingCartApp.Views.RestView.NavigationHelper":
+                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.RestView");
+                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
+                xamlMember.Getter = get_6_RestView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "ShoppingCartApp.Views.CameraView.NavigationHelper":
+                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.CameraView");
+                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
+                xamlMember.Getter = get_7_CameraView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
             case "ShoppingCartApp.Views.ProductFormDeleteUpdate.NavigationHelper":
                 userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.ProductFormDeleteUpdate");
                 xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
-                xamlMember.Getter = get_0_ProductFormDeleteUpdate_NavigationHelper;
+                xamlMember.Getter = get_8_ProductFormDeleteUpdate_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ShoppingCartApp.Views.ProductFormNew.NavigationHelper":
                 userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.ProductFormNew");
                 xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
-                xamlMember.Getter = get_1_ProductFormNew_NavigationHelper;
+                xamlMember.Getter = get_9_ProductFormNew_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ShoppingCartApp.Views.ProductImageView.NavigationHelper":
                 userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.ProductImageView");
                 xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
-                xamlMember.Getter = get_2_ProductImageView_NavigationHelper;
+                xamlMember.Getter = get_10_ProductImageView_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ShoppingCartApp.Views.ProductView.NavigationHelper":
                 userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.ProductView");
                 xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
-                xamlMember.Getter = get_3_ProductView_NavigationHelper;
+                xamlMember.Getter = get_11_ProductView_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "ShoppingCartApp.Views.ProviderView.NavigationHelper":
-                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.ProviderView");
+            case "ShoppingCartApp.Views.UserFormDeleteUpdate.NavigationHelper":
+                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.UserFormDeleteUpdate");
                 xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
-                xamlMember.Getter = get_4_ProviderView_NavigationHelper;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "ShoppingCartApp.Views.ShoppingCartView.NavigationHelper":
-                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.ShoppingCartView");
-                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
-                xamlMember.Getter = get_5_ShoppingCartView_NavigationHelper;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "ShoppingCartApp.Views.User.UserFormDeleteUpdate.NavigationHelper":
-                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.User.UserFormDeleteUpdate");
-                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
-                xamlMember.Getter = get_6_UserFormDeleteUpdate_NavigationHelper;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "ShoppingCartApp.Views.User.UserFormNew.NavigationHelper":
-                userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.User.UserFormNew");
-                xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
-                xamlMember.Getter = get_7_UserFormNew_NavigationHelper;
+                xamlMember.Getter = get_12_UserFormDeleteUpdate_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ShoppingCartApp.Views.UserView.NavigationHelper":
                 userType = (global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShoppingCartApp.Views.UserView");
                 xamlMember = new global::ShoppingCartApp.ShoppingCartApp_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ShoppingCartApp.Common.NavigationHelper");
-                xamlMember.Getter = get_8_UserView_NavigationHelper;
+                xamlMember.Getter = get_13_UserView_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             }

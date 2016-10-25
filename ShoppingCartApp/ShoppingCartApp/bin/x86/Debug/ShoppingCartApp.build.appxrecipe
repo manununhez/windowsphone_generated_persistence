@@ -21,6 +21,12 @@
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\ShoppingCartApp.exe">
       <PackagePath>ShoppingCartApp.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\packages\Kulman.WPA81.BaseRestService.1.4.1\lib\portable46-win81+wp81+wpa81\Kulman.WPA81.BaseRestService.dll">
+      <PackagePath>Kulman.WPA81.BaseRestService.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
     </AppxPackagedFile>
@@ -54,6 +60,9 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\ShoppingCartApp.xr.xml">
       <PackagePath>ShoppingCartApp.xr.xml</PackagePath>
     </AppxPackagedFile>
@@ -63,14 +72,20 @@
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Acelerometer\acclerometer.xbf">
-      <PackagePath>Views\Acelerometer\acclerometer.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\SharedTarget\ShareTargetPage.xbf">
+      <PackagePath>Views\SharedTarget\ShareTargetPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\HttpClient\BlankPage.xbf">
-      <PackagePath>Views\HttpClient\BlankPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\AudioRecord\AudioRecordView.xbf">
+      <PackagePath>Views\AudioRecord\AudioRecordView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Camera\CameraPhoto.xbf">
-      <PackagePath>Views\Camera\CameraPhoto.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Sensors\SensorsView.xbf">
+      <PackagePath>Views\Sensors\SensorsView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Rest\RestView.xbf">
+      <PackagePath>Views\Rest\RestView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Camera\CameraView.xbf">
+      <PackagePath>Views\Camera\CameraView.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Product\ProductFormDeleteUpdate.xbf">
       <PackagePath>Views\Product\ProductFormDeleteUpdate.xbf</PackagePath>
@@ -84,17 +99,8 @@
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Product\ProductView.xbf">
       <PackagePath>Views\Product\ProductView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\Provider\ProviderView.xbf">
-      <PackagePath>Views\Provider\ProviderView.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\ShoppingCart\ShoppingCartView.xbf">
-      <PackagePath>Views\ShoppingCart\ShoppingCartView.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\User\UserFormDeleteUpdate.xbf">
       <PackagePath>Views\User\UserFormDeleteUpdate.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\User\UserFormNew.xbf">
-      <PackagePath>Views\User\UserFormNew.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\manuelitox\Documents\windowspersistence\ShoppingCartApp\ShoppingCartApp\bin\x86\Debug\Views\User\UserView.xbf">
       <PackagePath>Views\User\UserView.xbf</PackagePath>

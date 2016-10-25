@@ -12,7 +12,7 @@ namespace ShoppingCartApp.ViewModels
 {
     class ShoppingCartDAO
     {
-        private SQLiteConnection dbConn = new SQLiteConnection(App.DB_PATH);
+        private SQLiteConnection dbConn = new SQLiteConnection(MySQLiteHelper.DbPath);
 
         // Retrieve the specific shoppingcart from the database. 
         public ShoppingCart ReadShoppingCart(int shoppingcartid)
@@ -64,7 +64,7 @@ namespace ShoppingCartApp.ViewModels
         // Insert the new contact in the Contacts table. 
         public void Insert(ShoppingCart shoppingCart)
         {
-            using (var dbConn = new SQLiteConnection(App.DB_PATH))
+            using (var dbConn = new SQLiteConnection(MySQLiteHelper.DbPath))
             {
                 dbConn.RunInTransaction(() =>
                 {
@@ -76,7 +76,7 @@ namespace ShoppingCartApp.ViewModels
         //Delete specific contact 
         public void DeleteContact(int Id)
         {
-            using (var dbConn = new SQLiteConnection(App.DB_PATH))
+            using (var dbConn = new SQLiteConnection(MySQLiteHelper.DbPath))
             {
                 var existingshoppingcart = dbConn.Query<ShoppingCart>("select * from ShoppingCart where Id =" + Id).FirstOrDefault();
                 if (existingshoppingcart != null)
@@ -91,7 +91,7 @@ namespace ShoppingCartApp.ViewModels
         //Delete all contactlist or delete Contacts table 
         public void DeleteAllShoppingCart()
         {
-            using (var dbConn = new SQLiteConnection(App.DB_PATH))
+            using (var dbConn = new SQLiteConnection(MySQLiteHelper.DbPath))
             {
                 //dbConn.RunInTransaction(() => 
                 //   { 

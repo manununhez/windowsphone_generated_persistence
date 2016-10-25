@@ -1,17 +1,11 @@
 ﻿<Page
-    x:Class="ShoppingCartApp.Views.User.UserFormDeleteUpdate"
+    x:Class="ShoppingCartApp.Views.UserFormDeleteUpdate"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:ShoppingCartApp.Views.User"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:local="using:ShoppingCartApp.Views">
 
     <ScrollViewer>
-
         <Grid x:Name="LayoutRoot">
-
             <Grid.ChildrenTransitions>
                 <TransitionCollection>
                     <EntranceThemeTransition/>
@@ -36,8 +30,8 @@
                 <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="27,80,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="14"/>
                 <TextBox x:Name="PasswordTbx" HorizontalAlignment="Left" Margin="27,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="304"/>
 
-                <Button x:ConnectionId='1' x:Name="btnUpdateUser" Content="Update User" HorizontalAlignment="Left" Margin="27,180,0,0" VerticalAlignment="Top" Height="71" Width="304"                            />
-                <Button x:ConnectionId='2' x:Name="btnDeleteUser" Content="Delete User" HorizontalAlignment="Left" Margin="27,240,0,0" VerticalAlignment="Top" Height="71" Width="304"                            />
+                <Button x:ConnectionId='1' x:Name="btnUpdate" Content="Update User" HorizontalAlignment="Left" Margin="27,180,0,0" VerticalAlignment="Top" Height="71" Width="304"                        />
+                <Button x:ConnectionId='2' x:Name="btnDelete" Content="Delete User" HorizontalAlignment="Left" Margin="27,240,0,0" VerticalAlignment="Top" Height="71" Width="304"                        />
 
             </Grid>
         </Grid>

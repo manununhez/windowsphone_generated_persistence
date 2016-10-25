@@ -1,24 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System.Runtime.Serialization;
 
 namespace ShoppingCartApp.Model
 {
-    class User
+    [DataContract]
+    public class User
     {
-        public string Nombre { get; set; }
-        public string Password { get; set; }
+        [DataMember]
+        public string nombre { get; set; }
+
+        [DataMember]
+        public string password { get; set; }
 
         public User()
         {
         }
 
-        public User(string Nombre, string Password)
+        public User(string nombre, string password)
         {
-            this.Nombre = Nombre;
-            this.Password = Password;
+            this.nombre = nombre;
+            this.password = password;
         }
     }
 }

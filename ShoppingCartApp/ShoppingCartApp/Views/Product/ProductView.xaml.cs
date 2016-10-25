@@ -2,37 +2,20 @@
 using ShoppingCartApp.Model;
 using ShoppingCartApp.ViewModels;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
-using Windows.UI.Popups;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
-// The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace ShoppingCartApp.Views
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class ProductView : Page
     {
         private NavigationHelper navigationHelper;
         private ObservableCollection<Product> dbProductList;
-
+       
         private ProductDAO dbProducts = new ProductDAO();
         public ProductView()
         {
@@ -69,12 +52,8 @@ namespace ShoppingCartApp.Views
         private void ReadAllProducts_Loaded(object sender, RoutedEventArgs e)
         {        
             dbProductList = dbProducts.ReadProducts();//Get all DB contacts  
-            if (dbProductList.Count > 0)
-            {
-                //Btn_Delete.IsEnabled = true;
-            }
             listBoxobj.ItemsSource = dbProductList.OrderByDescending(i => i.Id).ToList();//Binding DB data to LISTBOX and Latest contact ID can Display first.  
-            txbQuantity.Text = Convert.ToString(dbProductList.Count);//Text should not be empty 
+            element_count_loaded();
         }
 
         private void btnAddProduct_click(object sender, RoutedEventArgs e)
@@ -91,14 +70,11 @@ namespace ShoppingCartApp.Views
             }
         }
 
-        private void element_count_loaded(object sender, RoutedEventArgs e)
+        private void element_count_loaded()
         {
-           // txbQuantity.Text = Convert.ToString(dbProducts.CountProducts());
+            txbQuantity.Text = Convert.ToString(dbProductList.Count);//Text should not be empty 
         }
 
-        private void btnDeleteAll_click(object sender, RoutedEventArgs e)
-        {
 
-        }
     }
 }
